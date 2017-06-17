@@ -64,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void replaceAwithB(View view) {
-        //fragmentSecond = (FragmentSecond) manager.findFragmentByTag("Fragment_Second");
         if (fragmentOne != null){
             transaction = manager.beginTransaction();
             transaction.replace(R.id.group, fragmentSecond, "Fragment_Second");
@@ -76,7 +75,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void replaceBwithA(View view) {
-        //fragmentOne = (FragmentOne) manager.findFragmentByTag("Fragment_One");
         if(fragmentSecond != null){
             transaction = manager.beginTransaction();
             transaction.replace(R.id.group, fragmentOne, "Fragment_One");
